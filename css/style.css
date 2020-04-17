@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    padding-top: 56px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    backface-visibility: hidden;
+    background-color: white;
+    left: 0;
+    padding: 16px 32px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__home {
+	font-weight: 700;
+}
+
+.navbar__menu a {
+    padding: 0 16px;
+    font-weight: 700;
+}
+
+.news {
+    margin: 32px 0;
+}
+
+.news__secondary {
+    margin: 3.6em -0.75em;
+    display: flex;
+    /*flex-direction: row-reverse;*/
+}
+
+.news__secondary .left {
+    width: 60%;
+    padding: 0 0.75em;
+}
+
+.news__secondary .right {
+    width: 40%;
+    padding: 0 0.75em;
+}
+
+.embed__container {
+    max-width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.embed__container iframe, .embed__container object, .embed__container embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.short__container {
+	padding: 1.5em;
+	border-radius: 8px;
+    border: 2px solid rgb(238, 238, 238);
+}
+
+.news__secondary .article {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.news__secondary .article:first-of-type {
+	padding-top: 0;
+}
+
+.news__secondary .article:last-of-type {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article__title {
+    margin: 0.3em 0 0.3em 0;
+}
+
+.article__section {
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 12px;
+	color: #ff7f00;
+}
+
+footer {
+	background-color: #000;
+}
+
+footer p {
+	line-height: 64px;
+	color: #FFF;
+	margin: 0;
+}
+
+@media screen and (min-width: 728px) {
+    .container {
+        width: 928px;
+    }
+}
